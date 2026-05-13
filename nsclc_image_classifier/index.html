@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src = "js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Diagnostic Imaging App</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>NSCLC Histopathology Image Classifier</h1>
+        </header>
+        <main>
+            <div id="classify-image-container">
+                <div id="choose-file">
+                    <label for="file-input"><img src="icon/photo.png" alt="preview image of selected file" id="preview-image"></label>
+                    <input type="file" name="file-input" id="file-input" accept="image/*">
+                    <div id="button-container">
+                        <button type="button" id="classify-image-btn">Classify Image</button>
+                        <button type ="reset" id ="reset-btn">Reset</button>
+                    </div>
+                </div>
+                <div id="instruction-result-container">
+                    <div id="instructions">
+                        <h2>How to use</h2>
+                        <ol>
+                            <li>Click on choose file or on the photo upload icon</li>
+                            <li>Select the file you want to classify and click open</li>
+                            <li>Click Classify Image button</li>
+                            <li>The results of the classification will be displayed below.</li>
+                        </ol>
+                    </div>
+                    <div id="result-display">
+                     </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
